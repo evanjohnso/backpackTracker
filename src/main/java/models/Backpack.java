@@ -18,4 +18,21 @@ public class Backpack {
         packed.add(justPacked);
     }
 
+    //Getters
+    public float getTotalCost() {
+        for (Item good: packed) {
+            totalCost += good.getItemPrice() * good.getQuantity();
+        }
+        //round this later on
+        return totalCost;
+    }
+
+    public float getTotalWeight() {
+        for (Item good: packed) {
+            totalWeight += good.getItemWeight() * good.getQuantity();
+        }
+        //round this later on
+        return totalWeight;
+    }
+
 }
