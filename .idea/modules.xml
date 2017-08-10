@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/packing-tracking.iml" filepath="$PROJECT_DIR$/.idea/modules/packing-tracking.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/packing-tracking_main.iml" filepath="$PROJECT_DIR$/.idea/modules/packing-tracking_main.iml" group="packing-tracking" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/packing-tracking_test.iml" filepath="$PROJECT_DIR$/.idea/modules/packing-tracking_test.iml" group="packing-tracking" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/backpackTracker.iml" filepath="$PROJECT_DIR$/.idea/modules/backpackTracker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/backpackTracker_main.iml" filepath="$PROJECT_DIR$/.idea/modules/backpackTracker_main.iml" group="backpackTracker" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/backpackTracker_test.iml" filepath="$PROJECT_DIR$/.idea/modules/backpackTracker_test.iml" group="backpackTracker" />
     </modules>
   </component>
 </project>

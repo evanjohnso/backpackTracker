@@ -5,8 +5,8 @@ public class Item {
     private String itemName;
     private double itemPrice;
     private double itemWeight;
-    private boolean purchased = false;
-    private boolean packed = false;
+    private boolean purchased;
+    private boolean packed;
     private int quantity;
 
     //Constructor
@@ -14,6 +14,8 @@ public class Item {
         this.itemName = itemName;
         this.itemPrice = itemPrice;
         this.itemWeight = itemWeight;
+        this.purchased = false;
+        this.packed = false;
     }
 
     //Setters
