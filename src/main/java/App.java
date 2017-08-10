@@ -21,28 +21,66 @@ public class App {
         //Homepage displays coded items
         get("/", (request, response) -> {
             Map<String, Object> data = new HashMap<>();
+            //Create homepage for user and their backpack and items to be distributed
             Distributor store = new Distributor();
+            Backpack myBackpack = new Backpack();
+
+            //save these for later use
             request.session().attribute("currentStore", store);
+            request.session().attribute("userBackpack", myBackpack);
+
+            //display items from store on the page
             List<Item> goods = store.goodsBank();
             data.put("allGoods", goods);
+
             return new ModelAndView(data, "index.hbs");
         }, new HandlebarsTemplateEngine());
 
         //Backpack page displays current items, total weight, and total cost
         post("/backpack/:id", (request, response) -> {
             Map<String, Object> data = new HashMap<>();
-            Backpack myBackpack = new Backpack();
+            //Grab backpack and items from server
+            Backpack userBackpack = request.session().attribute("userBackpack");
             Distributor runningStore = request.session().attribute("currentStore");
+
+            //Find item by ID in the store and return it
             int quantity = Integer.parseInt(request.queryParams("good"));
             String goodID = request.params("id");
-
             Item foundItem = runningStore.findById(goodID);
+
+            //change the quantity attribute of this item before passing it to user's backpack
             foundItem.setQuantity(quantity);
-            myBackpack.setPacked(foundItem);
-            List<Item> whatsPacked = myBackpack.getPacked();
+            //throw the item and it's quantity into the backpack
+            userBackpack.setPacked(foundItem);
+
+            //look through the user's backpack and display each one on the html page
+            List<Item> whatsPacked = userBackpack.getPacked();
             data.put("packedGoods", whatsPacked);
-            data.put("backpack", myBackpack);
+            data.put("backpack", userBackpack);
+
+
             return new ModelAndView(data, "backpack.hbs");
+        }, new HandlebarsTemplateEngine());
+
+        get("/backpack", (request, response) -> {
+            Map<String, Object> data = new HashMap<>();
+            Backpack userBackpack = request.session().attribute("userBackpack");
+            List<Item> whatsPacked = userBackpack.getPacked();
+            data.put("packedGoods", whatsPacked);
+            data.put("backpack", userBackpack);
+            return new ModelAndView(data, "backpack.hbs");
+        }, new HandlebarsTemplateEngine());
+
+        get("/home", (request, response) -> {
+            Map<String, Object> data = new HashMap<>();
+            //grab specific user's information
+            Backpack userBackpack = request.session().attribute("userBackpack");
+            Distributor runningStore = request.session().attribute("currentStore");
+
+            List<Item> goods = runningStore.goodsBank();
+            data.put("allGoods", goods);
+
+            return new ModelAndView(data, "index.hbs");
         }, new HandlebarsTemplateEngine());
 
     }

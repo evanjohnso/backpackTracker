@@ -22,6 +22,7 @@ public class Backpack {
 
     //Getters
     public float getTotalCost() {
+        totalCost = 0;
         for (Item good : packed) {
             totalCost += good.getItemPrice() * good.getQuantity();
         }
@@ -30,6 +31,7 @@ public class Backpack {
     }
 
     public float getTotalWeight() {
+        totalWeight = 0;
         for (Item good : packed) {
             totalWeight += good.getItemWeight() * good.getQuantity();
         }
