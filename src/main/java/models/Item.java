@@ -1,7 +1,10 @@
 package models;
 
 
+import java.util.UUID;
+
 public class Item {
+    private String id;
     private String itemName;
     private double itemPrice;
     private double itemWeight;
@@ -9,8 +12,10 @@ public class Item {
     private boolean packed;
     private int quantity;
 
+
     //Constructor
     public Item(String itemName, double itemPrice, double itemWeight) {
+        this.id = UUID.randomUUID().toString();
         this.itemName = itemName;
         this.itemPrice = itemPrice;
         this.itemWeight = itemWeight;
@@ -54,5 +59,9 @@ public class Item {
 
     public int getQuantity() {
         return quantity;
+    }
+
+    public String getId() {
+        return id;
     }
 }

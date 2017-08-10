@@ -21,7 +21,7 @@ public class Backpack {
 
     //Getters
     public float getTotalCost() {
-        for (Item good: packed) {
+        for (Item good : packed) {
             totalCost += good.getItemPrice() * good.getQuantity();
         }
         //round this later on
@@ -29,15 +29,23 @@ public class Backpack {
     }
 
     public float getTotalWeight() {
-        for (Item good: packed) {
+        for (Item good : packed) {
             totalWeight += good.getItemWeight() * good.getQuantity();
         }
         //round this later on
         return totalWeight;
     }
+
     public List<Item> getPacked() {
         return packed;
     }
 
-
+    public Item findById(String itemId) {
+        Item foundGood = null;
+        for (Item good: packed) {
+            if (good.getId().equals(itemId))
+                foundGood = good;
+        }
+        return foundGood;
+    }
 }

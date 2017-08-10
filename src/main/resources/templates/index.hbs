@@ -1,0 +1,29 @@
+{{#partial "content"}}
+
+    <div class="jumbotron">Welcome to Backpack Tracker!</div>
+
+    <div class="row">
+        {{#each allGoods}}
+            <div class="container col-md-4">
+                <p>Product: {{itemName}} </p>
+                <p>Price: {{itemPrice}}</p>
+                <p>Weight: {{itemWeight}}</p>
+                <form action="/itemBackpack" method="POST">
+                    <div class="form-group">
+                        <p>How many?</p>
+                        <label for="good"></label>
+                        <input id="good" name="good" type="text">
+                    </div>
+                <button class="btn btn-info">Add to Backpack</button>
+                </form>
+                <hr>
+            </div>
+        {{/each}}
+    </div>
+{{/partial}}
+
+
+
+
+
+{{> layout.hbs}}

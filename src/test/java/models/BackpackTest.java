@@ -40,4 +40,15 @@ public class BackpackTest {
         assertEquals(27.73, testBackpack.getTotalWeight(), 0.05);
     }
 
+    @Test
+    public void findByIdItemsCanBeFound_Item() {
+        Backpack testBackpack = createBackpack();
+        Item testItem = testItem();
+        Item secondItem = new Item("sleeping bag", 10.33, 13.50);
+        testBackpack.setPacked(testItem);
+        testBackpack.setPacked(secondItem);
+        Item foundItem = testBackpack.findById(testItem.getId());
+        assertEquals(testItem, foundItem);
+    }
+
 }

@@ -7,14 +7,12 @@ import static org.junit.Assert.*;
 /**
  * Created by Guest on 8/10/17.
  */
-public class DistributerTest {
+public class DistributorTest {
 
     @Test
     public void distributerClassInstantiateCorrectlyAndItemsAreAdded() {
-        Distributer distributer = new Distributer();
-        assertTrue(distributer instanceof Distributer);
+        Distributor distributer = new Distributor();
+        assertTrue(distributer instanceof Distributor);
         assertEquals(3, distributer.goodsBank().size());
-
     }
-
 }
