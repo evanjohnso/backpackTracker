@@ -14,12 +14,31 @@ public class ItemTest {
 
     @After
     public void tearDown() throws Exception {
+    };
+
+    public Item testItem() {
+        return new Item("tent", 10.22, 14.23);
     }
 
     @Test
     public void createItem() {
-        Item testItem = new Item("tent", 10.22, 14.23);
+        Item testItem = testItem();
         assertTrue(testItem instanceof Item);
     }
+
+    @Test
+    public void createItemAndTestPriceGetter_price() {
+        Item testItem = testItem();
+        assertEquals(10.22, testItem.getItemPrice(), 0.02);
+    }
+
+    @Test
+    public void createItemAndTestSetQuantity_quantity() {
+        Item testItem = testItem();
+        testItem.setQuantity(12);
+        assertEquals(12, testItem.getQuantity());
+    }
+
+
 
 }

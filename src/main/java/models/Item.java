@@ -16,6 +16,7 @@ public class Item {
         this.itemWeight = itemWeight;
         this.purchased = false;
         this.packed = false;
+        this.quantity = 0;
     }
 
     //Setters
