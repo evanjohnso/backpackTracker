@@ -26,6 +26,13 @@ public class App {
             return new ModelAndView(data, "index.hbs");
         }, new HandlebarsTemplateEngine());
 
+        //Backpack page displays current items, total weight, and total cost
+        post("/backpack", (request, response) -> {
+            Map<String, Object> data = new HashMap<>();
+
+            return new ModelAndView(data, "backpack.hbs");
+        }, new HandlebarsTemplateEngine());
+
     }
 
 }
