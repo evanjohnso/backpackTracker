@@ -1,7 +1,9 @@
 package models;
 
 import java.util.ArrayList;
+import java.util.ConcurrentModificationException;
 import java.util.List;
+import java.util.ListIterator;
 
 public class Backpack {
     private List<Item> packed = new ArrayList<Item>();
@@ -14,11 +16,21 @@ public class Backpack {
         this.totalWeight = 0;
     }
 
-    //Setters
-    public void setPacked(Item justPacked) {
-        justPacked.setPacked();
-        packed.add(justPacked);
+    //     //Setters
+    public void setPacked(Item addToPack) {
+        int itemsToAdd = addToPack.getQuantity();
+        String thisID = addToPack.getId();
+        Item thisItem = findById(thisID);
+
+        if (thisItem != null) {
+            thisItem.setQuantity(itemsToAdd);
+        } else {
+            packed.add(addToPack);
+        }
     }
+
+
+
 
     //Getters
     public float getTotalCost() {
