@@ -3,12 +3,12 @@
     <div class="jumbotron">Welcome to Backpack Tracker!</div>
 
 
-    <div class="row">
+    <div class="row container-fluid">
         {{#each allGoods}}
-            <div class="container col-md-4">
-                <p>Product: {{itemName}} </p>
-                <p>Price: {{itemPrice}}</p>
-                <p>Weight: {{itemWeight}}</p>
+            <div class="container-fluid col-md-3">
+                <h3>{{itemName}} </h3>
+                <p>Price: ${{itemPrice}}</p>
+                <p>Weight: {{itemWeight}} kg</p>
                 <form action="/backpack/{{id}}" method="POST">
                     <div class="form-group">
                         <p>How many?</p>
@@ -17,7 +17,6 @@
                     </div>
                 <button class="btn btn-info">Add to Backpack</button>
                 </form>
-                <hr>
             </div>
         {{/each}}
     </div>

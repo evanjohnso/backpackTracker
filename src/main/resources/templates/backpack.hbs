@@ -4,11 +4,11 @@
     <div class="container">
         <div class="row">
         {{#each packedGoods}}
-            <div class="col-md-4">
-                <p>Item: {{itemName}}</p>
+            <div class="col-md-3">
+                <h3>{{itemName}}</h3>
+                <p>Price: ${{itemPrice}}</p>
+                <p>Weight: {{itemWeight}} kg</p>
                 <p>Quantity: {{quantity}}</p>
-                <p>Price: {{itemPrice}}</p>
-                <p>Weight: {{itemWeight}}</p>
             </div>
         {{/each}}
         </div>

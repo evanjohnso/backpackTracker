@@ -1,0 +1,40 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background: url("/images/bg-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.jumbotron {
+    text-align: center;
+    font-size: 70px;
+    margin-bottom: 20px;
+    background: inherit;
+    color: white;
+   }
+
+.row {
+    margin-top: 5%;
+    color: white;
+   }
+
+.col-md-3 {
+    display: inline-block;
+    float: none;
+    background: darkgrey;
+    border: 2px solid darkgrey;
+    border-radius: 5%;
+    margin-right: 7%;
+    padding-bottom: 1%;
+    }
+
+.col-md-3 h3 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
