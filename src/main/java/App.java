@@ -48,10 +48,8 @@ public class App {
             String goodID = request.params("id");
             Item foundItem = runningStore.findById(goodID);
 
-            //change the quantity attribute of this item before passing it to user's backpack
-            foundItem.setQuantity(quantity);
             //throw the item and it's quantity into the backpack
-            userBackpack.setPacked(foundItem);
+            userBackpack.setPacked(foundItem, quantity);
 
             //look through the user's backpack and display each one on the html page
             List<Item> whatsPacked = userBackpack.getPacked();

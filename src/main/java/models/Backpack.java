@@ -17,20 +17,17 @@ public class Backpack {
     }
 
     //     //Setters
-    public void setPacked(Item addToPack) {
-        int itemsToAdd = addToPack.getQuantity();
+    public void setPacked(Item addToPack, int itemsToAdd) {
         String thisID = addToPack.getId();
         Item thisItem = findById(thisID);
 
         if (thisItem != null) {
             thisItem.setQuantity(itemsToAdd);
         } else {
+            addToPack.setQuantity(itemsToAdd);
             packed.add(addToPack);
         }
     }
-
-
-
 
     //Getters
     public float getTotalCost() {
