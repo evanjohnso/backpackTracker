@@ -39,6 +39,19 @@ public class ItemTest {
         assertEquals(12, testItem.getQuantity());
     }
 
+    @Test
+    public void createItemAndChangePackedStatus_boolean() {
+        Item testItem = testItem();
+        testItem.setPacked();
+        assertEquals(true, testItem.isPacked());
+    }
+
+    @Test
+    public void createItemAndChangePurchasedStatus_boolean() {
+        Item testItem = testItem();
+        testItem.setPurchased();
+        assertEquals(true, testItem.isPurchased());
+    }
 
 
 }

@@ -23,8 +23,8 @@ public class Item {
     public void setPacked() {
         this.packed = !packed;
     }
-    public void setPurchased(boolean purchased) {
-        this.purchased = purchased;
+    public void setPurchased() {
+        this.purchased = !purchased;
     }
 
     public void setQuantity(int quantity) {
