@@ -18,4 +18,14 @@ public class Distributor {
     public List<Item> goodsBank() {
         return itemBank;
     }
+
+    public Item findById(String itemId) {
+        Item foundGood = null;
+        for (Item good: itemBank) {
+            if (good.getId().equals(itemId))
+                foundGood = good;
+        }
+        return foundGood;
+    }
 }
+

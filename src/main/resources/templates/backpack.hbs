@@ -1,6 +1,23 @@
 {{#partial "content"}}
     <div class="jumbotron">Your Backpack!</div>
-    
+
+    <div class="container">
+        <div class="row">
+        {{#each packedGoods}}
+            <div class="col-md-4">
+                <p>Item: {{itemName}}</p>
+                <p>Quantity: {{quantity}}</p>
+                <p>Price: {{itemPrice}}</p>
+                <p>Weight: {{itemWeight}}</p>
+            </div>
+        {{/each}}
+        </div>
+        <hr>
+        <p>Total price: {{backpack.totalPrice}}</p>
+        <p>Total weight: {{backpack.totalWeight}}</p>
+
+
+    </div>
 
 {{/partial}}
 

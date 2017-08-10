@@ -16,6 +16,7 @@ public class Backpack {
 
     //Setters
     public void setPacked(Item justPacked) {
+        justPacked.setPacked();
         packed.add(justPacked);
     }
 
