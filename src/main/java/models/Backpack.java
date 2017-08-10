@@ -5,12 +5,13 @@ import java.util.List;
 
 public class Backpack {
     private List<Item> packed = new ArrayList<Item>();
-    private float totalCost = 0;
-    private float totalWeight = 0;
+    private float totalCost;
+    private float totalWeight;
 
     //Constructor
     public Backpack() {
-
+        this.totalCost = 0;
+        this.totalWeight = 0;
     }
 
     //Setters
@@ -34,5 +35,9 @@ public class Backpack {
         //round this later on
         return totalWeight;
     }
+    public List<Item> getPacked() {
+        return packed;
+    }
+
 
 }

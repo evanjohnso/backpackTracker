@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0cf67661-2817-4703-8d52-bea1aa6e5c2f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/models/Item.java" afterPath="$PROJECT_DIR$/src/main/java/models/Item.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/models/Backpack.java" afterPath="$PROJECT_DIR$/src/main/java/models/Backpack.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/models/ItemTest.java" afterPath="$PROJECT_DIR$/src/test/java/models/ItemTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -43,11 +43,12 @@
       <file leaf-file-name="Item.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/models/Item.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="25" column="32" lean-forward="true" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+            <state relative-caret-position="241">
+              <caret line="29" column="40" lean-forward="false" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="40" />
               <folding>
                 <element signature="e#549#550#0" expanded="true" />
                 <element signature="e#586#587#0" expanded="true" />
+                <element signature="e#619#620#0" expanded="true" />
                 <element signature="e#662#663#0" expanded="true" />
                 <element signature="e#707#708#0" expanded="true" />
                 <element signature="e#748#749#0" expanded="true" />
@@ -68,14 +69,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ItemTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ItemTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/models/ItemTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="670">
-              <caret line="56" column="1" lean-forward="true" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
+            <state relative-caret-position="625">
+              <caret line="81" column="65" lean-forward="false" selection-start-line="81" selection-start-column="65" selection-end-line="81" selection-end-column="65" />
               <folding>
-                <element signature="e#304#305#0" expanded="true" />
-                <element signature="e#357#358#0" expanded="true" />
+                <element signature="e#305#306#0" expanded="true" />
+                <element signature="e#358#359#0" expanded="true" />
+                <element signature="e#397#398#0" expanded="true" />
+                <element signature="e#434#435#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -95,15 +98,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Backpack.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Backpack.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/models/Backpack.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="42" lean-forward="false" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+            <state relative-caret-position="405">
+              <caret line="27" column="24" lean-forward="false" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#324#325#0" expanded="true" />
-                <element signature="e#362#363#0" expanded="true" />
+                <element signature="e#373#374#0" expanded="true" />
+                <element signature="e#411#412#0" expanded="true" />
+                <element signature="e#884#885#0" expanded="true" />
+                <element signature="e#913#914#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -118,6 +123,11 @@
         <option value="JUnit4 Test Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -410,10 +420,10 @@
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/models/Distributer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/Backpack.java" />
         <option value="$PROJECT_DIR$/src/main/java/App.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/Item.java" />
         <option value="$PROJECT_DIR$/src/test/java/models/ItemTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/Backpack.java" />
       </list>
     </option>
   </component>
@@ -572,7 +582,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ItemTest">
+  <component name="RunManager" selected="JUnit.ItemTest.addMultipleItemsToBackpackAndReturnCost_cost">
     <configuration default="false" name="ItemTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -599,32 +609,6 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="ItemTest.createItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="models.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="backpackTracker_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="models" />
-      <option name="MAIN_CLASS_NAME" value="models.ItemTest" />
-      <option name="METHOD_NAME" value="createItem" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
     <configuration default="false" name="ItemTest.createItemAndChangePurchasedStatus_boolean" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -638,6 +622,84 @@
       <option name="PACKAGE_NAME" value="models" />
       <option name="MAIN_CLASS_NAME" value="models.ItemTest" />
       <option name="METHOD_NAME" value="createItemAndChangePurchasedStatus_boolean" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ItemTest.createBackpackAndAddItemToIt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="backpackTracker_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="models" />
+      <option name="MAIN_CLASS_NAME" value="models.ItemTest" />
+      <option name="METHOD_NAME" value="createBackpackAndAddItemToIt" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ItemTest.createBackpackAndAddItemToIt_Item" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="backpackTracker_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="models" />
+      <option name="MAIN_CLASS_NAME" value="models.ItemTest" />
+      <option name="METHOD_NAME" value="createBackpackAndAddItemToIt_Item" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ItemTest.addMultipleItemsToBackpackAndReturnCost_cost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="backpackTracker_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="models" />
+      <option name="MAIN_CLASS_NAME" value="models.ItemTest" />
+      <option name="METHOD_NAME" value="addMultipleItemsToBackpackAndReturnCost_cost" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -855,16 +917,20 @@
       <listeners />
       <method />
     </configuration>
-    <list size="3">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.ItemTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.ItemTest.createItem" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ItemTest.createItemAndChangePurchasedStatus_boolean" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ItemTest.createItemAndChangePurchasedStatus_boolean" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ItemTest.createBackpackAndAddItemToIt" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ItemTest.createBackpackAndAddItemToIt_Item" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ItemTest.addMultipleItemsToBackpackAndReturnCost_cost" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ItemTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ItemTest.createItemAndChangePurchasedStatus_boolean" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ItemTest.createItem" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ItemTest.addMultipleItemsToBackpackAndReturnCost_cost" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ItemTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ItemTest.createBackpackAndAddItemToIt_Item" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ItemTest.createBackpackAndAddItemToIt" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ItemTest.createItemAndChangePurchasedStatus_boolean" />
       </list>
     </recent_temporary>
   </component>
@@ -882,26 +948,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ItemTest - 2017.08.10 at 08h 27m 21s.xml">
+    <history-entry file="ItemTest - 2017.08.10 at 08h 59m 49s.xml">
       <configuration name="ItemTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ItemTest - 2017.08.10 at 08h 32m 36s.xml">
-      <configuration name="ItemTest" configurationId="JUnit" />
+    <history-entry file="ItemTest_addMultipleItemsToBackpackAndReturnCost_cost - 2017.08.10 at 09h 02m 54s.xml">
+      <configuration name="ItemTest.addMultipleItemsToBackpackAndReturnCost_cost" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ItemTest - 2017.08.10 at 08h 35m 31s.xml">
-      <configuration name="ItemTest" configurationId="JUnit" />
+    <history-entry file="ItemTest_addMultipleItemsToBackpackAndReturnCost_cost - 2017.08.10 at 09h 05m 37s.xml">
+      <configuration name="ItemTest.addMultipleItemsToBackpackAndReturnCost_cost" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ItemTest - 2017.08.10 at 08h 37m 13s.xml">
-      <configuration name="ItemTest" configurationId="JUnit" />
+    <history-entry file="ItemTest_addMultipleItemsToBackpackAndReturnCost_cost - 2017.08.10 at 09h 06m 38s.xml">
+      <configuration name="ItemTest.addMultipleItemsToBackpackAndReturnCost_cost" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ItemTest - 2017.08.10 at 08h 37m 20s.xml">
-      <configuration name="ItemTest" configurationId="JUnit" />
+    <history-entry file="ItemTest_addMultipleItemsToBackpackAndReturnCost_cost - 2017.08.10 at 09h 08m 12s.xml">
+      <configuration name="ItemTest.addMultipleItemsToBackpackAndReturnCost_cost" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ItemTest_createItem - 2017.08.10 at 08h 29m 59s.xml">
-      <configuration name="ItemTest.createItem" configurationId="JUnit" />
+    <history-entry file="ItemTest_addMultipleItemsToBackpackAndReturnCost_cost - 2017.08.10 at 09h 08m 19s.xml">
+      <configuration name="ItemTest.addMultipleItemsToBackpackAndReturnCost_cost" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ItemTest_createItemAndChangePurchasedStatus_boolean - 2017.08.10 at 08h 38m 38s.xml">
-      <configuration name="ItemTest.createItemAndChangePurchasedStatus_boolean" configurationId="JUnit" />
+    <history-entry file="ItemTest_addMultipleItemsToBackpackAndReturnCost_cost - 2017.08.10 at 09h 08m 30s.xml">
+      <configuration name="ItemTest.addMultipleItemsToBackpackAndReturnCost_cost" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ItemTest_addMultipleItemsToBackpackAndReturnCost_cost - 2017.08.10 at 09h 10m 30s.xml">
+      <configuration name="ItemTest.addMultipleItemsToBackpackAndReturnCost_cost" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ItemTest_createBackpackAndAddItemToIt_Item - 2017.08.10 at 08h 59m 27s.xml">
+      <configuration name="ItemTest.createBackpackAndAddItemToIt_Item" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ItemTest_createBackpackAndAddItemToIt_Item - 2017.08.10 at 08h 59m 46s.xml">
+      <configuration name="ItemTest.createBackpackAndAddItemToIt_Item" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -909,34 +984,34 @@
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33768353" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33768353" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33523655" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33523655" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27098322" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1015,8 +1090,10 @@
           <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#324#325#0" expanded="true" />
-            <element signature="e#362#363#0" expanded="true" />
+            <element signature="e#373#374#0" expanded="true" />
+            <element signature="e#411#412#0" expanded="true" />
+            <element signature="e#884#885#0" expanded="true" />
+            <element signature="e#913#914#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1028,6 +1105,7 @@
           <folding>
             <element signature="e#549#550#0" expanded="true" />
             <element signature="e#586#587#0" expanded="true" />
+            <element signature="e#619#620#0" expanded="true" />
             <element signature="e#662#663#0" expanded="true" />
             <element signature="e#707#708#0" expanded="true" />
             <element signature="e#748#749#0" expanded="true" />
@@ -1081,8 +1159,10 @@
           <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#324#325#0" expanded="true" />
-            <element signature="e#362#363#0" expanded="true" />
+            <element signature="e#373#374#0" expanded="true" />
+            <element signature="e#411#412#0" expanded="true" />
+            <element signature="e#884#885#0" expanded="true" />
+            <element signature="e#913#914#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1094,6 +1174,7 @@
           <folding>
             <element signature="e#549#550#0" expanded="true" />
             <element signature="e#586#587#0" expanded="true" />
+            <element signature="e#619#620#0" expanded="true" />
             <element signature="e#662#663#0" expanded="true" />
             <element signature="e#707#708#0" expanded="true" />
             <element signature="e#748#749#0" expanded="true" />
@@ -1128,15 +1209,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/Backpack.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="42" lean-forward="false" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#324#325#0" expanded="true" />
-            <element signature="e#362#363#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1152,21 +1229,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/Item.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="25" column="32" lean-forward="true" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+        <state relative-caret-position="241">
+          <caret line="29" column="40" lean-forward="false" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="40" />
           <folding>
             <element signature="e#549#550#0" expanded="true" />
             <element signature="e#586#587#0" expanded="true" />
+            <element signature="e#619#620#0" expanded="true" />
             <element signature="e#662#663#0" expanded="true" />
             <element signature="e#707#708#0" expanded="true" />
             <element signature="e#748#749#0" expanded="true" />
@@ -1188,11 +1258,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/models/ItemTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="670">
-          <caret line="56" column="1" lean-forward="true" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
+        <state relative-caret-position="625">
+          <caret line="81" column="65" lean-forward="false" selection-start-line="81" selection-start-column="65" selection-end-line="81" selection-end-column="65" />
           <folding>
-            <element signature="e#304#305#0" expanded="true" />
-            <element signature="e#357#358#0" expanded="true" />
+            <element signature="e#305#306#0" expanded="true" />
+            <element signature="e#358#359#0" expanded="true" />
+            <element signature="e#397#398#0" expanded="true" />
+            <element signature="e#434#435#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/Backpack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="24" lean-forward="false" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#373#374#0" expanded="true" />
+            <element signature="e#411#412#0" expanded="true" />
+            <element signature="e#884#885#0" expanded="true" />
+            <element signature="e#913#914#0" expanded="true" />
           </folding>
         </state>
       </provider>
