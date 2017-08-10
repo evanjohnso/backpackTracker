@@ -57,29 +57,4 @@ public class ItemTest {
         testItem.setPurchased();
         assertEquals(true, testItem.isPurchased());
     }
-
-    //Test Backpack methods
-    @Test
-    public void createBackpackAndAddItemToIt_Item() {
-        Backpack testBackpack = createBackpack();
-        Item testItem = testItem();
-        testBackpack.setPacked(testItem);
-        assertTrue(testBackpack instanceof Backpack);
-        assertEquals(true, testBackpack.getPacked().contains(testItem));
-    }
-
-    @Test
-    public void addMultipleItemsToBackpackAndReturnCost_cost() {
-        Backpack testBackpack = createBackpack();
-        Item testItem = testItem();
-        Item secondItem = new Item("sleeping bag", 10.33, 13.50);
-        testItem.setQuantity(1);
-        secondItem.setQuantity(1);
-        testBackpack.setPacked(testItem);
-        testBackpack.setPacked(secondItem);
-        assertEquals(2, testBackpack.getPacked().size());
-        assertEquals(20.55, testBackpack.getTotalCost(), 0.02);
-        assertEquals(27.73, testBackpack.getTotalWeight(), 0.05);
-    }
-
 }
