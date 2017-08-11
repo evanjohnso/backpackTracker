@@ -20,17 +20,17 @@ public class App {
 
         //Homepage displays coded items
         get("/", (request, response) -> {
-            Map<String, Object> data = new HashMap<>();
-            //Create homepage for user and their backpack and items to be distributed
-            Distributor store = new Distributor();
-            Backpack myBackpack = new Backpack();
+                Map<String, Object> data = new HashMap<>();
+                //Create homepage for user and their backpack and items to be distributed
+                Distributor store = new Distributor();
+                Backpack myBackpack = new Backpack();
 
-            //save these for later use
-            request.session().attribute("currentStore", store);
-            request.session().attribute("userBackpack", myBackpack);
+                //save these for later use
+                request.session().attribute("currentStore", store);
+                request.session().attribute("userBackpack", myBackpack);
 
-            //display items from store on the page
-            List<Item> goods = store.goodsBank();
+                //display items from store on the page
+                List<Item> goods = store.goodsBank();
             data.put("allGoods", goods);
 
             return new ModelAndView(data, "index.hbs");

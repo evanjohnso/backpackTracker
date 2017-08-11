@@ -9,12 +9,17 @@ public class Distributor {
     private double[] weights = {1.00, 5.75, 1.00};
     private List<Item> itemBank = new ArrayList<Item>();
 
+
     public Distributor() {
         for (int i = 0; i < name.length; i++) {
             itemBank.add( new Item(name[i], prices[i], weights[i]) );
         }
     }
-
+    //Setters
+    public void addItem(Item newItem) {
+        itemBank.add(newItem);
+    }
+    //Getters
     public List<Item> goodsBank() {
         return itemBank;
     }
