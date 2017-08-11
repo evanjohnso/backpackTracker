@@ -38,3 +38,15 @@ body {
   font-weight: bold;
   margin-bottom: 5px;
 }
+
+#output {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+
+  /*
+  incorporate if want to stick to the bottom as a footer
+  position: fixed;
+  width: 100%;
+  bottom: 0;*/
+}

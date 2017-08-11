@@ -1,6 +1,7 @@
 {{#partial "content"}}
+    <hr>
     <div class="jumbotron">Your Backpack!</div>
-
+    <hr>
     <div class="container">
         <div class="row">
         {{#each packedGoods}}
@@ -12,13 +13,14 @@
             </div>
         {{/each}}
         </div>
-        <hr>
-        <p>Total price: ${{backpack.totalCost}}</p>
-        <p>Total weight: {{backpack.totalWeight}}</p>
-
-
     </div>
 
+{{/partial}}
+{{#partial "footer"}}
+    <div class="row container" id="output">
+        <p>Total price: ${{backpack.totalCost}}</p>
+        <p>Total weight: {{backpack.totalWeight}}</p>
+    </div>
 {{/partial}}
 
 {{> layout.hbs}}
